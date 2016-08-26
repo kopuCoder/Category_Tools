@@ -1,11 +1,10 @@
 //
-//  NSMutableDictionary+Extension.m
-//  LoanPro
+//  NSDictionary+CrashIntercept.m
+//  CategoryMethodCollections
 //
-//  Created by 秦茂军 on 16/8/17.
-//  Copyright © 2016年 haodai. All rights reserved.
+//  Created by 秦茂军 on 16/8/26.
+//  Copyright © 2016年 kopuCoder. All rights reserved.
 //
-
 #import "NSDictionary+CrashIntercept.h"
 #import <objc/message.h>
 @implementation NSDictionary(CrashIntercept)
@@ -35,14 +34,14 @@
         [self kpSetObject:anObject forKey:aKey];
     }
     else{
-        NSLog(@"ERROR:存在key:nil<---->value:%@",anObject);
+        NSLog(@"ERROR:[__NSDictionaryM setObjectForKey:]: key cannot be nil<---->value:%@",anObject);
         return;
     }
     
     if(anObject&&aKey){
         [self kpSetObject:anObject forKey:aKey];
     }else{
-        NSLog(@"ERROR:存在key:%@<------>value为nil",aKey);
+        NSLog(@"ERROR:字典存在key:%@<------>value为nil",aKey);
     }
 }
 

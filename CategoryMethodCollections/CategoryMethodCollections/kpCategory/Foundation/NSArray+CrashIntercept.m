@@ -11,11 +11,23 @@
 @implementation NSArray(CrashIntercept)
 
 + (void)load{
-    //不可变数组
-    Method originArrayIndex = class_getInstanceMethod(NSClassFromString(@"__NSArrayI"), @selector(objectAtIndex:));
-    Method newArrayIndex = class_getInstanceMethod(NSClassFromString(@"__NSArrayI"), @selector(kpObjectAtIndex:));
+    
+    
+    
+    //不可变数组为空时类型
+    Method originArrayIndex = class_getInstanceMethod(NSClassFromString(@"__NSArray0"), @selector(objectAtIndex:));
+    Method newArrayIndex = class_getInstanceMethod(NSClassFromString(@"__NSArray0"), @selector(kpEmptyObjectAtIndex:));
     if(originArrayIndex&&newArrayIndex){
         method_exchangeImplementations(originArrayIndex, newArrayIndex);
+    }
+
+    
+    
+    //不可变数组
+    Method originArrayIndex1 = class_getInstanceMethod(NSClassFromString(@"__NSArrayI"), @selector(objectAtIndex:));
+    Method newArrayIndex1 = class_getInstanceMethod(NSClassFromString(@"__NSArrayI"), @selector(kpObjectAtIndex:));
+    if(originArrayIndex1&&newArrayIndex1){
+        method_exchangeImplementations(originArrayIndex1, newArrayIndex1);
     }
     
     //可变数组
@@ -27,11 +39,16 @@
 
 }
 
+- (id)kpEmptyObjectAtIndex:(NSUInteger)index{
+    NSLog(@"ERROR:[__NSArray0 objectAtIndex:]: index %ld beyond bounds  for empty array",index);
+    return nil;
+}
+
 /***  拦截不可变数组越界取值问题*/
 - (id)kpObjectAtIndex:(NSUInteger)index{
     
     if(index >= self.count){
-        NSLog(@"ERROR:不可变数组取值index:%ld 越界",index);
+         NSLog(@"ERROR:[__NSArrayI objectAtIndex:]: index %ld beyond bounds %@",index,self.count>0?[NSString stringWithFormat:@"[0 .. %ld]",self.count-1]:@"bounds for empty array");
         return nil;
     }else{
         return [self kpObjectAtIndex:index];
@@ -43,7 +60,7 @@
     if (index<self.count) {
         return [self kpObjectAtIndexM:index];
     }
-    NSLog(@"ERROR:可变数组取值index:%ld越界",index);
+    NSLog(@"ERROR:[__NSArrayM objectAtIndex:]: index %ld beyond bounds %@",index,self.count>0?[NSString stringWithFormat:@"[0 .. %ld]",self.count-1]:@"bounds for empty array");
     return nil;
 }
 

@@ -19,17 +19,11 @@
 }
 
 + (void)load{
-    
-    static dispatch_once_t onceToken;//保证交换方法只执行一次
-    dispatch_once(&onceToken, ^{
         Class currentClass =  NSClassFromString(@"__NSCFNumber");
         Method  lengthMethod = class_getInstanceMethod(currentClass, @selector(length));
         if(!lengthMethod){
             class_addMethod(currentClass, @selector(length), (IMP)length, "i@:");
         }
-    });
-    
-    
 }
 
 
