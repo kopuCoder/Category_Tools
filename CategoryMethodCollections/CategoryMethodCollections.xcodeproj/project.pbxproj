@@ -10,7 +10,6 @@
 		304BABAF1D6F579500DBACDA /* NSArray+CrashIntercept.m in Sources */ = {isa = PBXBuildFile; fileRef = 304BABAB1D6F579500DBACDA /* NSArray+CrashIntercept.m */; };
 		304BABB01D6F579500DBACDA /* NSDictionary+CrashIntercept.m in Sources */ = {isa = PBXBuildFile; fileRef = 304BABAD1D6F579500DBACDA /* NSDictionary+CrashIntercept.m */; };
 		304BABB91D6F5DF000DBACDA /* NSNumber+CrashIntercept.m in Sources */ = {isa = PBXBuildFile; fileRef = 304BABB81D6F5DF000DBACDA /* NSNumber+CrashIntercept.m */; };
-		304BABBC1D6F634100DBACDA /* NSObject+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 304BABBB1D6F634100DBACDA /* NSObject+Log.m */; };
 		308413501D6F474400A42CC2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3084134F1D6F474400A42CC2 /* main.m */; };
 		308413531D6F474400A42CC2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 308413521D6F474400A42CC2 /* AppDelegate.m */; };
 		308413561D6F474400A42CC2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 308413551D6F474400A42CC2 /* ViewController.m */; };
@@ -45,8 +44,6 @@
 		304BABAD1D6F579500DBACDA /* NSDictionary+CrashIntercept.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+CrashIntercept.m"; sourceTree = "<group>"; };
 		304BABB71D6F5DF000DBACDA /* NSNumber+CrashIntercept.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+CrashIntercept.h"; sourceTree = "<group>"; };
 		304BABB81D6F5DF000DBACDA /* NSNumber+CrashIntercept.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+CrashIntercept.m"; sourceTree = "<group>"; };
-		304BABBA1D6F634100DBACDA /* NSObject+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Log.h"; sourceTree = "<group>"; };
-		304BABBB1D6F634100DBACDA /* NSObject+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Log.m"; sourceTree = "<group>"; };
 		3084134B1D6F474400A42CC2 /* CategoryMethodCollections.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CategoryMethodCollections.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3084134F1D6F474400A42CC2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		308413511D6F474400A42CC2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -108,8 +105,6 @@
 				304BABAB1D6F579500DBACDA /* NSArray+CrashIntercept.m */,
 				304BABAC1D6F579500DBACDA /* NSDictionary+CrashIntercept.h */,
 				304BABAD1D6F579500DBACDA /* NSDictionary+CrashIntercept.m */,
-				304BABBA1D6F634100DBACDA /* NSObject+Log.h */,
-				304BABBB1D6F634100DBACDA /* NSObject+Log.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -319,7 +314,6 @@
 				304BABAF1D6F579500DBACDA /* NSArray+CrashIntercept.m in Sources */,
 				304BABB01D6F579500DBACDA /* NSDictionary+CrashIntercept.m in Sources */,
 				308413531D6F474400A42CC2 /* AppDelegate.m in Sources */,
-				304BABBC1D6F634100DBACDA /* NSObject+Log.m in Sources */,
 				308413501D6F474400A42CC2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
