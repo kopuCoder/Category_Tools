@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D25271B1FC5B704007FC95F /* DeviceUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D25271A1FC5B704007FC95F /* DeviceUtils.m */; };
+		1D25271F1FC5B709007FC95F /* CHKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D25271E1FC5B709007FC95F /* CHKeychain.m */; };
 		304BABAF1D6F579500DBACDA /* NSArray+CrashIntercept.m in Sources */ = {isa = PBXBuildFile; fileRef = 304BABAB1D6F579500DBACDA /* NSArray+CrashIntercept.m */; };
 		304BABB01D6F579500DBACDA /* NSDictionary+CrashIntercept.m in Sources */ = {isa = PBXBuildFile; fileRef = 304BABAD1D6F579500DBACDA /* NSDictionary+CrashIntercept.m */; };
 		304BABB91D6F5DF000DBACDA /* NSNumber+CrashIntercept.m in Sources */ = {isa = PBXBuildFile; fileRef = 304BABB81D6F5DF000DBACDA /* NSNumber+CrashIntercept.m */; };
@@ -38,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D2527191FC5B704007FC95F /* DeviceUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceUtils.h; sourceTree = "<group>"; };
+		1D25271A1FC5B704007FC95F /* DeviceUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceUtils.m; sourceTree = "<group>"; };
+		1D25271D1FC5B709007FC95F /* CHKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHKeychain.h; sourceTree = "<group>"; };
+		1D25271E1FC5B709007FC95F /* CHKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHKeychain.m; sourceTree = "<group>"; };
 		304BABAA1D6F579500DBACDA /* NSArray+CrashIntercept.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+CrashIntercept.h"; sourceTree = "<group>"; };
 		304BABAB1D6F579500DBACDA /* NSArray+CrashIntercept.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+CrashIntercept.m"; sourceTree = "<group>"; };
 		304BABAC1D6F579500DBACDA /* NSDictionary+CrashIntercept.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+CrashIntercept.h"; sourceTree = "<group>"; };
@@ -87,6 +93,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D25271C1FC5B709007FC95F /* CHKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				1D25271D1FC5B709007FC95F /* CHKeychain.h */,
+				1D25271E1FC5B709007FC95F /* CHKeychain.m */,
+			);
+			path = CHKeychain;
+			sourceTree = "<group>";
+		};
 		304BABA81D6F579500DBACDA /* kpCategory */ = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +114,9 @@
 		304BABA91D6F579500DBACDA /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				1D25271C1FC5B709007FC95F /* CHKeychain */,
+				1D2527191FC5B704007FC95F /* DeviceUtils.h */,
+				1D25271A1FC5B704007FC95F /* DeviceUtils.m */,
 				304BABB71D6F5DF000DBACDA /* NSNumber+CrashIntercept.h */,
 				304BABB81D6F5DF000DBACDA /* NSNumber+CrashIntercept.m */,
 				304BABAA1D6F579500DBACDA /* NSArray+CrashIntercept.h */,
@@ -314,6 +332,8 @@
 				304BABAF1D6F579500DBACDA /* NSArray+CrashIntercept.m in Sources */,
 				304BABB01D6F579500DBACDA /* NSDictionary+CrashIntercept.m in Sources */,
 				308413531D6F474400A42CC2 /* AppDelegate.m in Sources */,
+				1D25271B1FC5B704007FC95F /* DeviceUtils.m in Sources */,
+				1D25271F1FC5B709007FC95F /* CHKeychain.m in Sources */,
 				308413501D6F474400A42CC2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
