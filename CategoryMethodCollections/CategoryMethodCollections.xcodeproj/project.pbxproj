@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D25271B1FC5B704007FC95F /* DeviceUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D25271A1FC5B704007FC95F /* DeviceUtils.m */; };
-		1D25271F1FC5B709007FC95F /* CHKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D25271E1FC5B709007FC95F /* CHKeychain.m */; };
-		304BABAF1D6F579500DBACDA /* NSArray+CrashIntercept.m in Sources */ = {isa = PBXBuildFile; fileRef = 304BABAB1D6F579500DBACDA /* NSArray+CrashIntercept.m */; };
-		304BABB01D6F579500DBACDA /* NSDictionary+CrashIntercept.m in Sources */ = {isa = PBXBuildFile; fileRef = 304BABAD1D6F579500DBACDA /* NSDictionary+CrashIntercept.m */; };
-		304BABB91D6F5DF000DBACDA /* NSNumber+CrashIntercept.m in Sources */ = {isa = PBXBuildFile; fileRef = 304BABB81D6F5DF000DBACDA /* NSNumber+CrashIntercept.m */; };
+		1DEAE4312467235F0073C4FF /* NSNumber+CrashIntercept.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEAE4222467235F0073C4FF /* NSNumber+CrashIntercept.m */; };
+		1DEAE4322467235F0073C4FF /* NSArray+sk_safeArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEAE4232467235F0073C4FF /* NSArray+sk_safeArray.m */; };
+		1DEAE4332467235F0073C4FF /* NSObject+sk_swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEAE4242467235F0073C4FF /* NSObject+sk_swizzling.m */; };
+		1DEAE4342467235F0073C4FF /* DeviceUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEAE4262467235F0073C4FF /* DeviceUtils.m */; };
+		1DEAE4352467235F0073C4FF /* CHKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEAE4292467235F0073C4FF /* CHKeychain.m */; };
+		1DEAE4362467235F0073C4FF /* NSMutableArray+sk_safeArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEAE42E2467235F0073C4FF /* NSMutableArray+sk_safeArray.m */; };
+		1DEAE4372467235F0073C4FF /* NSDictionary+CrashIntercept.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEAE42F2467235F0073C4FF /* NSDictionary+CrashIntercept.m */; };
+		1DEAE43B246723E10073C4FF /* UIView+sk_tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEAE43A246723E10073C4FF /* UIView+sk_tools.m */; };
 		308413501D6F474400A42CC2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3084134F1D6F474400A42CC2 /* main.m */; };
 		308413531D6F474400A42CC2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 308413521D6F474400A42CC2 /* AppDelegate.m */; };
 		308413561D6F474400A42CC2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 308413551D6F474400A42CC2 /* ViewController.m */; };
@@ -40,16 +43,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1D2527191FC5B704007FC95F /* DeviceUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceUtils.h; sourceTree = "<group>"; };
-		1D25271A1FC5B704007FC95F /* DeviceUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceUtils.m; sourceTree = "<group>"; };
-		1D25271D1FC5B709007FC95F /* CHKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHKeychain.h; sourceTree = "<group>"; };
-		1D25271E1FC5B709007FC95F /* CHKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHKeychain.m; sourceTree = "<group>"; };
-		304BABAA1D6F579500DBACDA /* NSArray+CrashIntercept.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+CrashIntercept.h"; sourceTree = "<group>"; };
-		304BABAB1D6F579500DBACDA /* NSArray+CrashIntercept.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+CrashIntercept.m"; sourceTree = "<group>"; };
-		304BABAC1D6F579500DBACDA /* NSDictionary+CrashIntercept.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+CrashIntercept.h"; sourceTree = "<group>"; };
-		304BABAD1D6F579500DBACDA /* NSDictionary+CrashIntercept.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+CrashIntercept.m"; sourceTree = "<group>"; };
-		304BABB71D6F5DF000DBACDA /* NSNumber+CrashIntercept.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+CrashIntercept.h"; sourceTree = "<group>"; };
-		304BABB81D6F5DF000DBACDA /* NSNumber+CrashIntercept.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+CrashIntercept.m"; sourceTree = "<group>"; };
+		1DEAE4222467235F0073C4FF /* NSNumber+CrashIntercept.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+CrashIntercept.m"; sourceTree = "<group>"; };
+		1DEAE4232467235F0073C4FF /* NSArray+sk_safeArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+sk_safeArray.m"; sourceTree = "<group>"; };
+		1DEAE4242467235F0073C4FF /* NSObject+sk_swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+sk_swizzling.m"; sourceTree = "<group>"; };
+		1DEAE4252467235F0073C4FF /* NSMutableArray+sk_safeArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+sk_safeArray.h"; sourceTree = "<group>"; };
+		1DEAE4262467235F0073C4FF /* DeviceUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceUtils.m; sourceTree = "<group>"; };
+		1DEAE4282467235F0073C4FF /* CHKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHKeychain.h; sourceTree = "<group>"; };
+		1DEAE4292467235F0073C4FF /* CHKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHKeychain.m; sourceTree = "<group>"; };
+		1DEAE42A2467235F0073C4FF /* NSDictionary+CrashIntercept.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+CrashIntercept.h"; sourceTree = "<group>"; };
+		1DEAE42B2467235F0073C4FF /* NSNumber+CrashIntercept.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+CrashIntercept.h"; sourceTree = "<group>"; };
+		1DEAE42C2467235F0073C4FF /* NSObject+sk_swizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+sk_swizzling.h"; sourceTree = "<group>"; };
+		1DEAE42D2467235F0073C4FF /* NSArray+sk_safeArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+sk_safeArray.h"; sourceTree = "<group>"; };
+		1DEAE42E2467235F0073C4FF /* NSMutableArray+sk_safeArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+sk_safeArray.m"; sourceTree = "<group>"; };
+		1DEAE42F2467235F0073C4FF /* NSDictionary+CrashIntercept.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+CrashIntercept.m"; sourceTree = "<group>"; };
+		1DEAE4302467235F0073C4FF /* DeviceUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceUtils.h; sourceTree = "<group>"; };
+		1DEAE439246723E10073C4FF /* UIView+sk_tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+sk_tools.h"; sourceTree = "<group>"; };
+		1DEAE43A246723E10073C4FF /* UIView+sk_tools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+sk_tools.m"; sourceTree = "<group>"; };
 		3084134B1D6F474400A42CC2 /* CategoryMethodCollections.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CategoryMethodCollections.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3084134F1D6F474400A42CC2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		308413511D6F474400A42CC2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -93,43 +102,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1D25271C1FC5B709007FC95F /* CHKeychain */ = {
+		1DEAE4202467235F0073C4FF /* sk_category */ = {
 			isa = PBXGroup;
 			children = (
-				1D25271D1FC5B709007FC95F /* CHKeychain.h */,
-				1D25271E1FC5B709007FC95F /* CHKeychain.m */,
+				1DEAE438246723780073C4FF /* UIKit */,
+				1DEAE4212467235F0073C4FF /* Foundation */,
 			);
-			path = CHKeychain;
+			path = sk_category;
 			sourceTree = "<group>";
 		};
-		304BABA81D6F579500DBACDA /* kpCategory */ = {
+		1DEAE4212467235F0073C4FF /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
-				304BABAE1D6F579500DBACDA /* UIKit */,
-				304BABA91D6F579500DBACDA /* Foundation */,
-			);
-			path = kpCategory;
-			sourceTree = "<group>";
-		};
-		304BABA91D6F579500DBACDA /* Foundation */ = {
-			isa = PBXGroup;
-			children = (
-				1D25271C1FC5B709007FC95F /* CHKeychain */,
-				1D2527191FC5B704007FC95F /* DeviceUtils.h */,
-				1D25271A1FC5B704007FC95F /* DeviceUtils.m */,
-				304BABB71D6F5DF000DBACDA /* NSNumber+CrashIntercept.h */,
-				304BABB81D6F5DF000DBACDA /* NSNumber+CrashIntercept.m */,
-				304BABAA1D6F579500DBACDA /* NSArray+CrashIntercept.h */,
-				304BABAB1D6F579500DBACDA /* NSArray+CrashIntercept.m */,
-				304BABAC1D6F579500DBACDA /* NSDictionary+CrashIntercept.h */,
-				304BABAD1D6F579500DBACDA /* NSDictionary+CrashIntercept.m */,
+				1DEAE4272467235F0073C4FF /* CHKeychain */,
+				1DEAE4302467235F0073C4FF /* DeviceUtils.h */,
+				1DEAE4262467235F0073C4FF /* DeviceUtils.m */,
+				1DEAE42D2467235F0073C4FF /* NSArray+sk_safeArray.h */,
+				1DEAE4232467235F0073C4FF /* NSArray+sk_safeArray.m */,
+				1DEAE42A2467235F0073C4FF /* NSDictionary+CrashIntercept.h */,
+				1DEAE42F2467235F0073C4FF /* NSDictionary+CrashIntercept.m */,
+				1DEAE4252467235F0073C4FF /* NSMutableArray+sk_safeArray.h */,
+				1DEAE42E2467235F0073C4FF /* NSMutableArray+sk_safeArray.m */,
+				1DEAE42B2467235F0073C4FF /* NSNumber+CrashIntercept.h */,
+				1DEAE4222467235F0073C4FF /* NSNumber+CrashIntercept.m */,
+				1DEAE42C2467235F0073C4FF /* NSObject+sk_swizzling.h */,
+				1DEAE4242467235F0073C4FF /* NSObject+sk_swizzling.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
 		};
-		304BABAE1D6F579500DBACDA /* UIKit */ = {
+		1DEAE4272467235F0073C4FF /* CHKeychain */ = {
 			isa = PBXGroup;
 			children = (
+				1DEAE4282467235F0073C4FF /* CHKeychain.h */,
+				1DEAE4292467235F0073C4FF /* CHKeychain.m */,
+			);
+			path = CHKeychain;
+			sourceTree = "<group>";
+		};
+		1DEAE438246723780073C4FF /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				1DEAE439246723E10073C4FF /* UIView+sk_tools.h */,
+				1DEAE43A246723E10073C4FF /* UIView+sk_tools.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -157,7 +172,7 @@
 		3084134D1D6F474400A42CC2 /* CategoryMethodCollections */ = {
 			isa = PBXGroup;
 			children = (
-				304BABA81D6F579500DBACDA /* kpCategory */,
+				1DEAE4202467235F0073C4FF /* sk_category */,
 				308413511D6F474400A42CC2 /* AppDelegate.h */,
 				308413521D6F474400A42CC2 /* AppDelegate.m */,
 				308413541D6F474400A42CC2 /* ViewController.h */,
@@ -260,7 +275,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0730;
-				ORGANIZATIONNAME = kopuCoder;
+				ORGANIZATIONNAME = SoulLink;
 				TargetAttributes = {
 					3084134A1D6F474400A42CC2 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -280,6 +295,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -327,14 +343,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DEAE4312467235F0073C4FF /* NSNumber+CrashIntercept.m in Sources */,
 				308413561D6F474400A42CC2 /* ViewController.m in Sources */,
-				304BABB91D6F5DF000DBACDA /* NSNumber+CrashIntercept.m in Sources */,
-				304BABAF1D6F579500DBACDA /* NSArray+CrashIntercept.m in Sources */,
-				304BABB01D6F579500DBACDA /* NSDictionary+CrashIntercept.m in Sources */,
 				308413531D6F474400A42CC2 /* AppDelegate.m in Sources */,
-				1D25271B1FC5B704007FC95F /* DeviceUtils.m in Sources */,
-				1D25271F1FC5B709007FC95F /* CHKeychain.m in Sources */,
+				1DEAE4332467235F0073C4FF /* NSObject+sk_swizzling.m in Sources */,
+				1DEAE4362467235F0073C4FF /* NSMutableArray+sk_safeArray.m in Sources */,
 				308413501D6F474400A42CC2 /* main.m in Sources */,
+				1DEAE4342467235F0073C4FF /* DeviceUtils.m in Sources */,
+				1DEAE4372467235F0073C4FF /* NSDictionary+CrashIntercept.m in Sources */,
+				1DEAE4352467235F0073C4FF /* CHKeychain.m in Sources */,
+				1DEAE43B246723E10073C4FF /* UIView+sk_tools.m in Sources */,
+				1DEAE4322467235F0073C4FF /* NSArray+sk_safeArray.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

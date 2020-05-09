@@ -2,7 +2,7 @@
 //  NSNumber+CrashIntercept.m
 //  CategoryMethodCollections
 //
-//  Created by 秦茂军 on 16/8/26.
+//  Created by Bruce Chin on 16/8/26.
 //  Copyright © 2016年 kopuCoder. All rights reserved.
 //
 
@@ -11,10 +11,8 @@
 
 @implementation NSNumber(CrashIntercept)
 
- NSUInteger length(id self, SEL _cmd)
-{
-    NSLog(@"ERROR:-[__NSCFNumber length]: unrecognized selector sent to instance");
-//    return [[NSString stringWithFormat:@"%@",self] length];
+ NSUInteger length(id self, SEL _cmd){
+    NSLog(@"\n\n*********  crash warning  *********\n\n[__NSCFNumber length]: unrecognized selector sent to instance\n\n*********  warning end  *********\n\n");
     return 0;
 }
 
